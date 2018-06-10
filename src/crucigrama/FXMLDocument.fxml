@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="694.0" style="-fx-background-color: #A5DF00;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crucigrama.FXMLDocumentController">
+   <children>
+      <ListView fx:id="listviewOrizontal" onKeyReleased="#teclearOrizontal" onMouseClicked="#MouseClickerOrizontal" prefHeight="589.0" prefWidth="106.0" style="-fx-background-color: #00FF00;" />
+      <ListView fx:id="listviewVertical" layoutX="570.0" onKeyReleased="#teclearVertical" onMouseClicked="#MouseClickerVertical" prefHeight="589.0" prefWidth="126.0" style="-fx-background-color: #00FF00;" />
+      <Label fx:id="labelOrizontal" layoutX="112.0" layoutY="15.0" text="Orizontal" textFill="#ff0101">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelVertical" layoutX="511.0" layoutY="18.0" text="Vertical" textFill="RED">
+         <font>
+            <Font name="Georgia Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="GridPanelCruzi" layoutX="148.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0">
+      </GridPane>
+      <TextField layoutX="130.0" layoutY="534.0" />
+      <Button fx:id="buttonEnviar" layoutX="294.0" layoutY="535.0" mnemonicParsing="false" style="-fx-background-color: #FF0000;" text="Enviar Resp" textFill="#27f502">
+         <font>
+            <Font name="Georgia Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonAbrir" layoutX="13.0" layoutY="375.0" mnemonicParsing="false" style="-fx-background-color: #FF0000;" text="Abrir PUZ" textFill="#11ff00">
+         <font>
+            <Font name="Georgia Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDescargar" layoutX="430.0" layoutY="537.0" mnemonicParsing="false" style="-fx-background-color: #FF0000;" text="Descargar PUZ" textFill="#51ff00">
+         <font>
+            <Font name="Georgia Bold Italic" size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelTitulo" layoutX="242.0" layoutY="17.0" text="TITULO CRUZIGRAMA" textFill="RED">
+         <font>
+            <Font name="Georgia Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAutor" layoutX="143.0" layoutY="508.0" text="Autor" textFill="RED">
+         <font>
+            <Font name="Georgia Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCopirrig" layoutX="403.0" layoutY="500.0" text="copyright" textFill="#eb0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPistaSelecionada" layoutX="148.0" layoutY="444.0" textFill="#141414">
+         <font>
+            <Font name="Georgia Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
